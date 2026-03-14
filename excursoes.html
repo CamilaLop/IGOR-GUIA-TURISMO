@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Excursões | Igor Guia</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="navbar" class="navbar">
+<div class="logo"><img src="./img/lg.svg" style="max-width: 90px"></div>
+
+
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html#home">HOME</a>
+    <a href="index.html#servicos">NOSSOS PASSEIOS</a>
+    <a href="cidades.html">CIDADES</a>
+    <a href="excursoes.html">EXCURSÕES E PACERIAS</a>
+    <a href="index.html#contato">FALE CONOSCO</a>
+  </nav>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+</header>
+
+<main class="page">
+   <!-- HERO COM VÍDEO + ONDAS + TEXTO ANIMADO -->
+<section class="hero-video hero-parallax" id="home">
+
+  <video autoplay muted loop playsinline class="hero-bg-video" id="heroVideo">
+    <source src="./video/excurcao-vd.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content hero-animate">
+    <span class="hero-kicker">PARCERIAS • EXCURSÕES • GRUPOS</span>
+
+    <h1>
+      EXCURSÕES NA REGIÃO DOS LAGOS
+    </h1>
+
+    <p>
+      Parcerias para grupos, agências e excursões com roteiro, logística e atendimento profissional
+    </p>
+
+    <div class="hero-actions">
+      <a href="#form-excursoes" class="btn-premium">Solicitar proposta</a>
+    </div>
+  </div>
+
+  <!-- ONDAS PREMIUM -->
+  <svg class="wave wave-back" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="#97A07A" fill-opacity="0.28">
+      <animate attributeName="d" dur="18s" repeatCount="indefinite"
+      values="
+      M0,224L60,229C120,235,240,245,360,240C480,235,600,213,720,202C840,192,960,192,1080,202C1200,213,1320,235,1380,245L1440,256V320H0Z;
+      M0,240L60,224C120,208,240,176,360,170C480,165,600,187,720,202C840,219,960,229,1080,224C1200,219,1320,197,1380,186L1440,176V320H0Z;
+      M0,214L60,202C120,190,240,188,360,202C480,216,600,246,720,250C840,254,960,232,1080,218C1200,205,1320,200,1380,198L1440,196V320H0Z;
+      M0,224L60,229C120,235,240,245,360,240C480,235,600,213,720,202C840,192,960,192,1080,202C1200,213,1320,235,1380,245L1440,256V320H0Z
+      "/>
+    </path>
+  </svg>
+
+  <svg class="wave wave-middle" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="#E8E4D8" fill-opacity="0.62">
+      <animate attributeName="d" dur="12s" repeatCount="indefinite"
+      values="
+      M0,192L48,186C96,181,192,171,288,176C384,181,480,203,576,213C672,224,768,224,864,208C960,192,1056,160,1152,149C1248,139,1344,149,1392,154L1440,160V320H0Z;
+      M0,176L48,160C96,144,192,112,288,117C384,123,480,165,576,192C672,219,768,229,864,218C960,208,1056,176,1152,170C1248,165,1344,187,1392,197L1440,208V320H0Z;
+      M0,208L48,218C96,229,192,251,288,245C384,240,480,208,576,181C672,155,768,133,864,138C960,144,1056,176,1152,186C1248,197,1344,187,1392,181L1440,176V320H0Z;
+      M0,192L48,186C96,181,192,171,288,176C384,181,480,203,576,213C672,224,768,224,864,208C960,192,1056,160,1152,149C1248,139,1344,149,1392,154L1440,160V320H0Z
+      "/>
+    </path>
+  </svg>
+
+  <svg class="wave wave-front" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="#E8E4D8" fill-opacity="1">
+      <animate attributeName="d" dur="8s" repeatCount="indefinite"
+      values="
+      M0,224L40,213C80,203,160,181,240,176C320,171,400,181,480,192C560,203,640,213,720,202C800,192,880,160,960,149C1040,139,1120,149,1200,160C1280,171,1360,181,1400,186L1440,192V320H0Z;
+      M0,192L40,186C80,181,160,171,240,181C320,192,400,224,480,229C560,235,640,213,720,192C800,171,880,149,960,149C1040,149,1120,171,1200,176C1280,181,1360,171,1400,165L1440,160V320H0Z;
+      M0,208L40,224C80,240,160,272,240,266C320,261,400,219,480,202C560,187,640,197,720,208C800,219,880,229,960,218C1040,208,1120,176,1200,160C1280,144,1360,144,1400,144L1440,144V320H0Z;
+      M0,224L40,213C80,203,160,181,240,176C320,171,400,181,480,192C560,203,640,213,720,202C800,192,880,160,960,149C1040,139,1120,149,1200,160C1280,171,1360,181,1400,186L1440,192V320H0Z
+      "/>
+    </path>
+  </svg>
+
+</section>
+ <!-- O QUE OFEREÇO -->
+  <section class="excursao-servicos">
+    <div class="excursao-wrap">
+      <h2 class="reveal" data-stagger="0">O QUE EU OFEREÇO PARA SUA EXCURSÃO</h2>
+
+      <div class="excursao-servicos-grid">
+        <article class="excursao-servico-card reveal" data-stagger="1">
+          <h3>Roteiros personalizados</h3>
+          <p>
+            Planejamento de itinerários conforme perfil do grupo, tempo disponível e cidade de interesse.
+          </p>
+        </article>
+
+        <article class="excursao-servico-card reveal" data-stagger="2">
+          <h3>Suporte logístico</h3>
+          <p>
+            Orientação sobre embarque, deslocamentos, duração dos passeios e organização geral do roteiro.
+          </p>
+        </article>
+
+        <article class="excursao-servico-card reveal" data-stagger="3">
+          <h3>Acompanhamento profissional</h3>
+          <p>
+            Presença de guia qualificado, com experiência em turismo receptivo desde 2017.
+          </p>
+        </article>
+
+        <article class="excursao-servico-card reveal" data-stagger="4">
+          <h3>Atendimento ágil</h3>
+          <p>
+            Comunicação direta para alinhar detalhes, tirar dúvidas e organizar sua excursão com mais segurança.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="excursao-processo" id="como-funciona">
+    <div class="excursao-wrap">
+      <h2 class="reveal" data-stagger="0">COMO FUNCIONA</h2>
+
+      <div class="processo-grid">
+        <div class="processo-step reveal" data-stagger="1">
+          <strong>01</strong>
+          <h3>Envie sua solicitação</h3>
+          <p>Informe data, cidade, estimativa de pessoas e o perfil do grupo.</p>
+        </div>
+
+        <div class="processo-step reveal" data-stagger="2">
+          <strong>02</strong>
+          <h3>Receba um direcionamento</h3>
+          <p>Analiso sua necessidade e retorno com possibilidades de roteiro e operação.</p>
+        </div>
+
+        <div class="processo-step reveal" data-stagger="3">
+          <strong>03</strong>
+          <h3>Alinhe os detalhes</h3>
+          <p>Definimos horários, estrutura, passeios e pontos principais da experiência.</p>
+        </div>
+
+        <div class="processo-step reveal" data-stagger="4">
+          <strong>04</strong>
+          <h3>Realize sua excursão</h3>
+          <p>Seu grupo vive a experiência com acompanhamento e organização profissional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CARROSSEL EXCURSÕES REALIZADAS ===== -->
+<section class="exc-carousel-section reveal" data-stagger="1">
+  <h2 class="carousel-title">EXCURSÕES REALIZADAS</h2>
+  <p class="carousel-subtitle">Alguns momentos de grupos e roteiros que já guiamos.</p>
+
+  <div class="exc-carousel" aria-label="Carrossel de excursões realizadas">
+    <div class="exc-carousel-track" id="excCarouselTrack">
+
+      <figure class="exc-slide">
+        <img src="./img/ex-1.jpg" alt="Grupo em passeio ao pôr do sol">
+        <figcaption>Grupo | Pôr do sol</figcaption>
+      </figure>
+
+      <figure class="exc-slide">
+        <img src="./img/grupo-2.jpg" alt="Passeio em praia cristalina">
+        <figcaption>Passeio | Praia cristalina</figcaption>
+      </figure>
+
+      <figure class="exc-slide">
+        <img src="./img/grupo-3.jpg" alt="Trilha com vista panorâmica">
+        <figcaption>Trilha | Vista panorâmica</figcaption>
+      </figure>
+
+      <figure class="exc-slide">
+        <img src="./img/grupo-4.jpg" alt="Passeio de barco">
+        <figcaption>Barco | Roteiro completo</figcaption>
+      </figure>
+
+      <figure class="exc-slide">
+        <img src="./img/grupo-5.jpg" alt="Mergulho guiado">
+        <figcaption>Mergulho | Batismo</figcaption>
+      </figure>
+
+      <figure class="exc-slide">
+        <img src="./img/barco-b1.jpg" alt="Mergulho guiado">
+        <figcaption>Mergulho | Batismo</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+  <section class="builder" id="form-excursoes">
+    <h3 class="reveal" data-stagger="0">FALE COMIGO PARA EXCURSÕES</h3>
+    <p class="reveal" data-stagger="1">Preencha e envie direto no WhatsApp. Eu retorno com proposta e disponibilidade.</p>
+
+    <form class="exc-form reveal" data-stagger="2" onsubmit="event.preventDefault(); enviarExcursaoWhatsApp();">
+      <input type="text" id="exc_nome" placeholder="Seu nome" required>
+      <input type="text" id="exc_empresa" placeholder="Agência / Excursão (nome)" required>
+      <input type="tel" id="exc_contato" placeholder="Telefone / WhatsApp para retorno" required>
+      <input type="date" id="exc_data" required>
+      <input type="number" id="exc_pessoas" min="1" placeholder="Qtd. estimada de pessoas" required>
+      <input type="text" id="exc_cidades" placeholder="Cidades de interesse (ex.: Búzios + Arraial)" required>
+      <textarea id="exc_obs" placeholder="Observações (ex.: perfil do grupo, passeios desejados, orçamento, etc.)"></textarea>
+
+      <div class="exc-actions">
+        <button type="reset" class="btn-ghost">Limpar</button>
+        <button type="submit" class="btn-premium">Enviar no WhatsApp</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+<footer class="footer">
+
+  <div class="footer-grid">
+
+    <!-- SOBRE / CONTATO -->
+    <div class="footer-col reveal" data-stagger="0">
+      <h3>IGOR GUIA</h3>
+      <p>
+        Experiências personalizadas em Arraial do Cabo, Armação dos Búzios e Cabo Frio,
+        com segurança, organização e atendimento profissional.
+      </p>
+
+      <div class="footer-contato">
+        <p><strong>WhatsApp:</strong> (22) 99968-3645</p>
+        <p><strong>E-mail:</strong> contato@igorguia.com</p>
+        <p><strong>Atendimento:</strong> Região dos Lagos - RJ</p>
+      </div>
+    </div>
+
+    <!-- MAPA DO SITE -->
+    <div class="footer-col reveal" data-stagger="1">
+      <h4>Mapa do Site</h4>
+      <ul class="footer-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#servicos">Nossos Passeios</a></li>
+        <li><a href="cidades.html">Cidades</a></li>
+        <li><a href="excursoes.html">Excursões</a></li>
+        <li><a href="index.html#quem-sou">Quem Sou Eu</a></li>
+        <li><a href="index.html#contato">Fale Conosco</a></li>
+      </ul>
+    </div>
+
+    <!-- REGIÃO DOS LAGOS -->
+    <div class="footer-col reveal" data-stagger="2">
+      <h4>Região dos Lagos</h4>
+      <ul class="footer-links">
+        <li><a href="cidades/buzios.html">Armação dos Búzios</a></li>
+        <li><a href="cidades/cabo-frio.html">Cabo Frio</a></li>
+        <li><a href="cidades/arraial.html">Arraial do Cabo</a></li>
+      </ul>
+    </div>
+
+    <!-- MAPA -->
+    <div class="footer-col footer-mapa reveal" data-stagger="3">
+      <h4>Mapa da Região</h4>
+
+      <div class="mapa-container">
+        <iframe
+          src="https://www.google.com/maps?q=Regi%C3%A3o%20dos%20Lagos%20RJ&z=9&output=embed"
+          width="100%"
+          height="220"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Igor Guia — Região dos Lagos. Todos os direitos reservados.</p>
+  </div>
+
+</footer>
+</main>
+
+<a class="whatsapp-float" href="https://wa.me/5522999683645" target="_blank" aria-label="WhatsApp">💬</a>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Igor Guia | Região dos Lagos</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="navbar" class="navbar">
+  <div class="logo"><img src="./img/lg.svg" style="max-width: 70px"></div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html#home">HOME</a>
+    <a href="index.html#servicos">NOSSOS PASSEIOS</a>
+    <a href="cidades.html">CIDADES</a>
+    <a href="excursoes.html">EXCURSÕES E PARCERIAS</a>
+    <a href="index.html#contato">FALE CONOSCO</a>
+  </nav>
+
+  <!-- Botão Mobile -->
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- Fundo escuro ao abrir menu -->
+  <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+</header>
+
+<!-- HERO COM VÍDEO + ONDAS + TEXTO ANIMADO -->
+<section class="hero-video hero-parallax" id="home">
+
+  <video autoplay muted loop playsinline class="hero-bg-video" id="heroVideo">
+    <source src="./video/cover-banner.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content hero-animate">
+    <span class="hero-kicker">IGOR GUIA • REGIÃO DOS LAGOS</span>
+
+    <h1>
+      REGIÃO DOS LAGOS
+    </h1>
+
+    <p>
+      Paisagens deslumbrantes, águas cristalinas e experiências
+      inesquecíveis esperando por você.
+    </p>
+
+    <div class="hero-actions">
+      <a href="cidades.html" class="btn-premium">Escolher meu passeio</a>
+      <a href="#quem-sou" class="btn-ghost hero-ghost">Conhecer o guia</a>
+    </div>
+  </div>
+
+  <!-- ONDAS PREMIUM -->
+  <svg class="wave wave-back" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="#97A07A" fill-opacity="0.28">
+      <animate attributeName="d" dur="18s" repeatCount="indefinite"
+      values="
+      M0,224L60,229C120,235,240,245,360,240C480,235,600,213,720,202C840,192,960,192,1080,202C1200,213,1320,235,1380,245L1440,256V320H0Z;
+      M0,240L60,224C120,208,240,176,360,170C480,165,600,187,720,202C840,219,960,229,1080,224C1200,219,1320,197,1380,186L1440,176V320H0Z;
+      M0,214L60,202C120,190,240,188,360,202C480,216,600,246,720,250C840,254,960,232,1080,218C1200,205,1320,200,1380,198L1440,196V320H0Z;
+      M0,224L60,229C120,235,240,245,360,240C480,235,600,213,720,202C840,192,960,192,1080,202C1200,213,1320,235,1380,245L1440,256V320H0Z
+      "/>
+    </path>
+  </svg>
+
+  <svg class="wave wave-middle" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="#7C855F" fill-opacity="0.62">
+      <animate attributeName="d" dur="12s" repeatCount="indefinite"
+      values="
+      M0,192L48,186C96,181,192,171,288,176C384,181,480,203,576,213C672,224,768,224,864,208C960,192,1056,160,1152,149C1248,139,1344,149,1392,154L1440,160V320H0Z;
+      M0,176L48,160C96,144,192,112,288,117C384,123,480,165,576,192C672,219,768,229,864,218C960,208,1056,176,1152,170C1248,165,1344,187,1392,197L1440,208V320H0Z;
+      M0,208L48,218C96,229,192,251,288,245C384,240,480,208,576,181C672,155,768,133,864,138C960,144,1056,176,1152,186C1248,197,1344,187,1392,181L1440,176V320H0Z;
+      M0,192L48,186C96,181,192,171,288,176C384,181,480,203,576,213C672,224,768,224,864,208C960,192,1056,160,1152,149C1248,139,1344,149,1392,154L1440,160V320H0Z
+      "/>
+    </path>
+  </svg>
+
+  <svg class="wave wave-front" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="#6F7A55" fill-opacity="1">
+      <animate attributeName="d" dur="8s" repeatCount="indefinite"
+      values="
+      M0,224L40,213C80,203,160,181,240,176C320,171,400,181,480,192C560,203,640,213,720,202C800,192,880,160,960,149C1040,139,1120,149,1200,160C1280,171,1360,181,1400,186L1440,192V320H0Z;
+      M0,192L40,186C80,181,160,171,240,181C320,192,400,224,480,229C560,235,640,213,720,192C800,171,880,149,960,149C1040,149,1120,171,1200,176C1280,181,1360,171,1400,165L1440,160V320H0Z;
+      M0,208L40,224C80,240,160,272,240,266C320,261,400,219,480,202C560,187,640,197,720,208C800,219,880,229,960,218C1040,208,1120,176,1200,160C1280,144,1360,144,1400,144L1440,144V320H0Z;
+      M0,224L40,213C80,203,160,181,240,176C320,171,400,181,480,192C560,203,640,213,720,202C800,192,880,160,960,149C1040,139,1120,149,1200,160C1280,171,1360,181,1400,186L1440,192V320H0Z
+      "/>
+    </path>
+  </svg>
+
+</section>
+
+<!-- ===== CARROSSEL INFINITO ===== -->
+<section class="carousel-section " data-stagger="0">
+
+  <h2 class="carousel-title reveal">Explore alguns dos passeios mais procurados da Região dos Lagos</h2>
+
+  <div class="carousel reveal">
+    <div class="carousel-track" id="carouselTrack">
+
+      <div class="carousel-item">
+        <img src="./img/trilha-arraial.jpg">
+        <p>Trilhas</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./img/passeio-jet-buzios.jpg">
+        <p>Jet Ski</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./img/barco-buzios.jpg">
+        <p>Passeio de Barco</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./img/mergulho-buzios.png">
+        <p>Mergulho</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./img/bugre-2.jpg">
+        <p>Bugre</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./img/voo-pm.jpg">
+        <p>Voo Paramotor</p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- ===== ESCOLHA SUA CIDADE ===== -->
+<section class="escolha-cidade">
+  <div class="cidade-container">
+    <h2 class="reveal" data-stagger="0">ESCOLHA SUA EXPERIÊNCIA</h2>
+
+    <p class="cidade-subtitle reveal" data-stagger="1">
+      Selecione a cidade que deseja explorar e monte seu próximo passeio
+      <strong>individual ou em grupo</strong> na Região dos Lagos.
+    </p>
+
+    <div class="cidade-cards">
+      <a href="cidades/buzios.html" class="cidade-card reveal tilt-card" data-stagger="2">
+        <img src="./img/BUZIOS-BANNER.jpg" alt="Armação dos Búzios">
+        <div class="cidade-card-wave"></div>
+        <div class="cidade-overlay">
+          <div class="cidade-meta">
+            <span class="location-icon">📍</span>
+            <span>Armação dos Búzios</span>
+          </div>
+          <h3>Praias, charme e experiências exclusivas</h3>
+          <span class="cidade-link">Ver passeios</span>
+        </div>
+      </a>
+
+      <a href="cidades/arraial.html" class="cidade-card reveal tilt-card" data-stagger="3">
+        <img src="./img/arraial.jpg" alt="Arraial do Cabo">
+        <div class="cidade-card-wave"></div>
+        <div class="cidade-overlay">
+          <div class="cidade-meta">
+            <span class="location-icon">📍</span>
+            <span>Arraial do Cabo</span>
+          </div>
+          <h3>Águas cristalinas e aventuras inesquecíveis</h3>
+          <span class="cidade-link">Explorar experiências</span>
+        </div>
+      </a>
+
+      <a href="cidades/cabo-frio.html" class="cidade-card reveal tilt-card" data-stagger="4">
+        <img src="./img/Cabo-Frio-Capa-1.jpg" alt="Cabo Frio">
+        <div class="cidade-card-wave"></div>
+        <div class="cidade-overlay">
+          <div class="cidade-meta">
+            <span class="location-icon">📍</span>
+            <span>Cabo Frio</span>
+          </div>
+          <h3>Dunas, mar e roteiros para todos os estilos</h3>
+          <span class="cidade-link">Descobrir passeios</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIDEO EXPERIÊNCIA ===== -->
+
+<section class="video-experiencia">
+
+  <div class="video-container">
+
+    <div class="video-texto reveal">
+
+      <h2>Viva a experiência da Região dos Lagos</h2>
+
+      <p>
+        Conheça alguns dos cenários mais impressionantes do litoral brasileiro.
+        Passeios de barco, trilhas, mergulho e experiências únicas em
+        Arraial do Cabo, Búzios e Cabo Frio.
+      </p>
+
+      <a href="cidades.html" class="btn-premium">
+        Escolher meu passeio
+      </a>
+
+    </div>
+
+    <div class="video-box reveal">
+
+      <video autoplay muted loop playsinline>
+        <source src="./video/arraial-vd.mp4" type="video/mp4">
+      </video>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="servicos" id="servicos">
+  <h2 class="reveal" data-stagger="0">PRINCIPAIS PASSEIOS E SERVIÇOS</h2>
+  <div class="grid">
+    <div class="card reveal" data-stagger="1">TRILHAS ECOLÓGICAS</div>
+    <div class="card reveal" data-stagger="2">PASSEIOS DE BARCO</div>
+    <div class="card reveal" data-stagger="3">MERGULHO</div>
+    <div class="card reveal" data-stagger="4">CITY TOUR</div>
+  </div>
+</section>
+
+<section class="cidades" id="cidades">
+  <h2 class="reveal" data-stagger="0">EXPERIÊNCIAS ÚNICAS</h2>
+  <div class="counter-grid reveal" data-stagger="1">
+    <div><p> em </p><h3 data-target="3">0</h3><p>cidades</p></div>
+    <div><p>+ de </p><h3 data-target="10">0</h3><p>trilhas</p></div>
+    <div><p>+ de </p><h3 data-target="30">0</h3><p>praias</p></div>
+    <div><p>+ de </p><h3 data-target="15">0</h3><p>experiências</p></div>
+  
+  </div>
+  
+</section>
+
+<!-- ===== EXPERIÊNCIAS & DEPOIMENTOS ===== -->
+<section class="experiencias">
+
+  <div class="container">
+
+    <h2 class="section-title reveal" data-stagger="0">
+      NOSSOS PASSEIOS E GRUPOS
+    </h2>
+
+    <!-- GALERIA DE FOTOS -->
+    <div class="galeria">
+
+      <div class="foto reveal" data-stagger="1">
+        <img src="./img/grupo_1.jpg">
+      </div>
+
+      <div class="foto reveal" data-stagger="2">
+        <img src="./img/grupo-5.jpg">
+      </div>
+
+      <div class="foto reveal" data-stagger="3">
+        <img src="./img/grupo-3.jpg">
+      </div>
+
+      <div class="foto reveal" data-stagger="4">
+        <img src="./img/grupo-2.jpg">
+      </div>
+
+      <div class="foto reveal" data-stagger="">
+        <img src="./img/grupo-4.jpg">
+      </div>
+
+      <div class="foto reveal" data-stagger="">
+        <img src="./img/ex-1.jpg">
+      </div>
+
+      <div class="foto reveal" data-stagger="">
+        <img src="./img/ex-2.jpg">
+      </div>
+
+      <div class="foto reveal" data-stagger="">
+        <img src="./img/grupo-arraial.jpg">
+      </div>
+
+    </div>
+
+    <!-- DEPOIMENTOS -->
+    <div class="depoimentos">
+
+      <div class="depoimento reveal" data-stagger="1">
+        <p>
+          “Foi incrível. @micheleturismoes realizando sonhos através do turismo. Gratidão @igorguiarj por nos apresentar esse paraíso.”
+        </p>
+        <span>— Eliane, Arraial do Cabo</span>
+      </div>
+
+      <div class="depoimento reveal" data-stagger="2">
+        <p>
+          “Resolvi vir aqui registrar meu sincero agradeço a @viajandobrasilafora , na figura da Guia Sol e do Guia Igor que tornaram cada momento especial...foi um presente de aniversário para meu pequeno Valentin e ficará para sempre na memória dele esse paraíso que vocês nos apresentaram 🔥👏😍”
+        </p>
+        <span>— Michele, Rio de Janeiro</span>
+      </div>
+
+      <div class="depoimento reveal" data-stagger="3">
+        <p>
+          “Que energia maravilhosa desta viagem , simplesmente perfeita e incrível cada momento dessa viagem a Arraial , ficou um gostinho de quero mais 🥹🥰.... A guia Sol um amor de pessoa , muito prestativa e sempre presente , o guia Igor sempre prestativo e atencioso.... Amei tudo desta viagem incrível 😍”
+        </p>
+        <span>— Maria, Minas Gerais</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===== QUEM SOU EU ===== -->
+<section class="quem-sou reveal" data-stagger="0" id="quem-sou">
+  <div class="quem-wrap">
+
+    <div class="quem-foto reveal" data-stagger="1">
+
+  <img src="./img/eu-igor.jpg" alt="Igor Rangel - Guia de Turismo">
+
+  <div class="selo-guia">
+    <span>Guia Credenciado</span>
+    <strong>2016</strong>
+  </div>
+
+</div>
+
+    <div class="quem-texto">
+      <h2 class="reveal" data-stagger="2">QUEM SOU EU</h2>
+
+      <h3 class="reveal" data-stagger="3">Igor Rangel</h3>
+
+      <p class="reveal" data-stagger="4">
+        Sou <strong>Igor Rangel</strong>, guia de turismo profissional, formado desde <strong>2016</strong>,
+        com credenciamento como <strong>Guia Regional (RJ)</strong>, <strong>Guia Nacional</strong> e
+        <strong>Guia América do Sul</strong>.
+      </p>
+
+      <p class="reveal" data-stagger="5">
+        Atuo no turismo receptivo desde <strong>2017</strong>, oferecendo acompanhamento completo para
+        <strong>grupos de excursão</strong> e <strong>passeios individuais</strong>, com planejamento de roteiros,
+        organização de passeios e suporte em todas as etapas da viagem.
+      </p>
+
+      <p class="reveal" data-stagger="6">
+        Trabalho nas cidades de <strong>Arraial do Cabo</strong>, <strong>Armação dos Búzios</strong> e
+        <strong>Cabo Frio</strong>. Sou <strong>cabofriense</strong> e utilizo meu conhecimento local para proporcionar
+        experiências <strong>seguras</strong>, <strong>bem organizadas</strong> e <strong>personalizadas</strong>,
+        conectando cada visitante ao melhor da <strong>Região dos Lagos</strong>.
+      </p>
+
+      <div class="quem-actions reveal" data-stagger="7">
+        <a class="btn-premium" href="cidades.html">Ver passeios</a>
+        <a class="btn-ghost" href="index.html#contato" text-decoration="none">Falar comigo</a>
+      </div>
+
+      <div class="quem-badges reveal" data-stagger="8">
+        <span class="badge">📌 Regional (RJ)</span>
+        <span class="badge">🇧🇷 Nacional</span>
+        <span class="badge">🌎 América do Sul</span>
+        <span class="badge">🗓️ Desde 2017</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="contato reveal" data-stagger="0" id="contato">
+  <h2>MONTE SEU ROTEIRO PERSONALIZADO</h2>
+  <p>Escolha datas, estilo de passeio e quantidade de pessoas — eu te envio as melhores opções.</p>
+  <a href="https://wa.me/5522999683645" target="_blank" class="btn-premium">FALAR NO WHATSAPP</a>
+  <a href="https://instagram.com/seuinstagram" target="_blank" class="btn-instagram">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+    <path fill="currentColor"
+    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9S287.7 141 224.1 141zm0 189.6c-41.3 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.5 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zM398.8 80C379.6 60.8 352.8 48 324.3 48H123.7C95.2 48 68.4 60.8 49.2 80S16 124.8 16 153.3v205.4c0 28.5 12.8 55.3 33.2 74.5s46 33.2 74.5 33.2h200.6c28.5 0 55.3-12.8 74.5-33.2s33.2-46 33.2-74.5V153.3c0-28.5-12.8-55.3-33.2-73.3zM384 358.7c0 32.6-26.4 59-59 59H123c-32.6 0-59-26.4-59-59V153.3c0-32.6 26.4-59 59-59h202c32.6 0 59 26.4 59 59v205.4z"/>
+  </svg>
+
+  Ver mais no Instagram
+
+</a>
+</section>
+
+<a class="whatsapp-float" href="https://wa.me/5522999683645" target="_blank" aria-label="WhatsApp">💬</a>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+
+  <div class="footer-grid">
+
+    <!-- SOBRE / CONTATO -->
+    <div class="footer-col reveal" data-stagger="0">
+      <h3>IGOR GUIA</h3>
+      <p>
+        Experiências personalizadas em Arraial do Cabo, Armação dos Búzios e Cabo Frio,
+        com segurança, organização e atendimento profissional.
+      </p>
+
+      <div class="footer-contato">
+        <p><strong>WhatsApp:</strong> (22) 99968-3645</p>
+        <p><strong>E-mail:</strong> contato@igorguia.com</p>
+        <p><strong>Atendimento:</strong> Região dos Lagos - RJ</p>
+      </div>
+    </div>
+
+    <!-- MAPA DO SITE -->
+    <div class="footer-col reveal" data-stagger="1">
+      <h4>Mapa do Site</h4>
+      <ul class="footer-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#servicos">Nossos Passeios</a></li>
+        <li><a href="cidades.html">Cidades</a></li>
+        <li><a href="excursoes.html">Excursões</a></li>
+        <li><a href="index.html#quem-sou">Quem Sou Eu</a></li>
+        <li><a href="index.html#contato">Fale Conosco</a></li>
+      </ul>
+    </div>
+
+    <!-- REGIÃO DOS LAGOS -->
+    <div class="footer-col reveal" data-stagger="2">
+      <h4>Região dos Lagos</h4>
+      <ul class="footer-links">
+        <li><a href="cidades/buzios.html">Armação dos Búzios</a></li>
+        <li><a href="cidades/cabo-frio.html">Cabo Frio</a></li>
+        <li><a href="cidades/arraial.html">Arraial do Cabo</a></li>
+      </ul>
+    </div>
+
+    <!-- MAPA -->
+    <div class="footer-col footer-mapa reveal" data-stagger="3">
+      <h4>Mapa da Região</h4>
+
+      <div class="mapa-container">
+        <iframe
+          src="https://www.google.com/maps?q=Regi%C3%A3o%20dos%20Lagos%20RJ&z=9&output=embed"
+          width="100%"
+          height="220"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Igor Guia — Região dos Lagos. Todos os direitos reservados.</p>
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
