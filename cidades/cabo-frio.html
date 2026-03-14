@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cabo Frio | Passeios</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header id="navbar" class="navbar">
+  <div class="logo"><img src="../img/lg.svg" style="max-width: 90px"></div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="../index.html">HOME</a>
+    <a href="../index.html#servicos">NOSSOS PASSEIOS</a>
+    <a href="../cidades.html">CIDADES</a>
+    <a href="../excursoes.html">EXCURSÕES E PARCERIAS</a>
+    <a href="../index.html#contato">FALE CONOSCO</a>
+  </nav>
+
+  <!-- Botão Mobile -->
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- Fundo escuro ao abrir menu -->
+  <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+</header>
+
+
+<main class="page">
+  <!-- HERO COM VÍDEO + ONDAS + TEXTO ANIMADO -->
+<section class="hero-video hero-parallax" id="home">
+
+  <video autoplay muted loop playsinline class="hero-bg-video" id="heroVideo">
+    <source src="../video/CABO-VD.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content hero-animate">
+    <span class="hero-kicker">IGOR GUIA • REGIÃO DOS LAGOS</span>
+
+    <h1>
+      CABO FRIO
+    </h1>
+
+    <p>
+      Conheça o Balneário mais famoso da Região
+    </p>
+
+    <div class="hero-actions">
+      <a href="../index.html#quem-sou" class="btn-ghost hero-ghost">Conhecer o guia</a>
+    </div>
+  </div>
+
+  <!-- ONDAS PREMIUM -->
+  <svg class="wave wave-back" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="#97A07A" fill-opacity="0.28">
+      <animate attributeName="d" dur="18s" repeatCount="indefinite"
+      values="
+      M0,224L60,229C120,235,240,245,360,240C480,235,600,213,720,202C840,192,960,192,1080,202C1200,213,1320,235,1380,245L1440,256V320H0Z;
+      M0,240L60,224C120,208,240,176,360,170C480,165,600,187,720,202C840,219,960,229,1080,224C1200,219,1320,197,1380,186L1440,176V320H0Z;
+      M0,214L60,202C120,190,240,188,360,202C480,216,600,246,720,250C840,254,960,232,1080,218C1200,205,1320,200,1380,198L1440,196V320H0Z;
+      M0,224L60,229C120,235,240,245,360,240C480,235,600,213,720,202C840,192,960,192,1080,202C1200,213,1320,235,1380,245L1440,256V320H0Z
+      "/>
+    </path>
+  </svg>
+
+  <svg class="wave wave-middle" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="#E8E4D8" fill-opacity="0.62">
+      <animate attributeName="d" dur="12s" repeatCount="indefinite"
+      values="
+      M0,192L48,186C96,181,192,171,288,176C384,181,480,203,576,213C672,224,768,224,864,208C960,192,1056,160,1152,149C1248,139,1344,149,1392,154L1440,160V320H0Z;
+      M0,176L48,160C96,144,192,112,288,117C384,123,480,165,576,192C672,219,768,229,864,218C960,208,1056,176,1152,170C1248,165,1344,187,1392,197L1440,208V320H0Z;
+      M0,208L48,218C96,229,192,251,288,245C384,240,480,208,576,181C672,155,768,133,864,138C960,144,1056,176,1152,186C1248,197,1344,187,1392,181L1440,176V320H0Z;
+      M0,192L48,186C96,181,192,171,288,176C384,181,480,203,576,213C672,224,768,224,864,208C960,192,1056,160,1152,149C1248,139,1344,149,1392,154L1440,160V320H0Z
+      "/>
+    </path>
+  </svg>
+
+  <svg class="wave wave-front" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="#E8E4D8" fill-opacity="1">
+      <animate attributeName="d" dur="8s" repeatCount="indefinite"
+      values="
+      M0,224L40,213C80,203,160,181,240,176C320,171,400,181,480,192C560,203,640,213,720,202C800,192,880,160,960,149C1040,139,1120,149,1200,160C1280,171,1360,181,1400,186L1440,192V320H0Z;
+      M0,192L40,186C80,181,160,171,240,181C320,192,400,224,480,229C560,235,640,213,720,192C800,171,880,149,960,149C1040,149,1120,171,1200,176C1280,181,1360,171,1400,165L1440,160V320H0Z;
+      M0,208L40,224C80,240,160,272,240,266C320,261,400,219,480,202C560,187,640,197,720,208C800,219,880,229,960,218C1040,208,1120,176,1200,160C1280,144,1360,144,1400,144L1440,144V320H0Z;
+      M0,224L40,213C80,203,160,181,240,176C320,171,400,181,480,192C560,203,640,213,720,202C800,192,880,160,960,149C1040,139,1120,149,1200,160C1280,171,1360,181,1400,186L1440,192V320H0Z
+      "/>
+    </path>
+  </svg>
+
+</section>
+
+  <section class="tours-wrap">
+    <h2 class="reveal" data-stagger="0">PASSEIOS DISPONÍVEIS</h2>
+    <div class="tours-grid">
+      
+<article class="tour-card reveal" data-stagger="1" data-city="Cabo Frio" data-tour="Bugre">
+  <div class="tour-media" style="background-image:url('../img/bugre.jpg');"></div>
+  <div class="tour-body">
+    <div class="tour-title">Bugre</div>
+    <div class="tour-meta"><span class="badge">⏱ 1h–2h</span><span class="badge">🚙 Dunas</span><span class="badge">📸 Mirantes</span></div>
+    <div class="tour-desc">Dunas, praias e mirantes em um passeio cheio de paisagens. Ideal para fotos e conhecer vários pontos em pouco tempo.</div>
+    
+
+    <form class="tour-form" onsubmit="event.preventDefault(); enviarPasseioWhatsApp(this.querySelector('.btn-cta'));">
+      <input class="full" type="text" name="nome" placeholder="Seu nome" required>
+      <input type="date" name="data" required>
+      <input type="number" name="pessoas" min="1" placeholder="Qtd. de pessoas" required>
+      <input type="number" name="idade" min="0" placeholder="Idade" required>
+      <div class="tour-actions full">
+        <button type="button" class="btn-ghost" onclick="limparFormulario(this)">Limpar</button>
+        <button type="button" class="btn-premium btn-cta" onclick="enviarPasseioWhatsApp(this)">Enviar no WhatsApp</button>
+      </div>
+    </form>
+  </div>
+</article>
+
+<article class="tour-card reveal" data-stagger="2" data-city="Cabo Frio" data-tour="Jet Ski">
+  <div class="tour-media" style="background-image:url('../img/passeio-de-jetski.jpg');"></div>
+  <div class="tour-body">
+    <div class="tour-title">Jet Ski</div>
+    <div class="tour-meta"><span class="badge">⏱ 30–60min</span><span class="badge">🦺 Colete</span><span class="badge">✅ Instrução</span></div>
+    <div class="tour-desc">Pilotagem com instruções e rota segura. Uma experiência eletrizante em Cabo Frio.</div>
+    <div class="tour-care"><strong>Cuidados:</strong> Colete obrigatório; seguir rota e limites; menores conforme regras do operador.</div>
+
+    <form class="tour-form" onsubmit="event.preventDefault(); enviarPasseioWhatsApp(this.querySelector('.btn-cta'));">
+      <input class="full" type="text" name="nome" placeholder="Seu nome" required>
+      <input type="date" name="data" required>
+      <input type="number" name="pessoas" min="1" placeholder="Qtd. de pessoas" required>
+      <input type="number" name="idade" min="0" placeholder="Idade" required>
+      <div class="tour-actions full">
+        <button type="button" class="btn-ghost" onclick="limparFormulario(this)">Limpar</button>
+        <button type="button" class="btn-premium btn-cta" onclick="enviarPasseioWhatsApp(this)">Enviar no WhatsApp</button>
+      </div>
+    </form>
+  </div>
+</article>
+
+<article class="tour-card reveal" data-stagger="3" data-city="Cabo Frio" data-tour="Barco Catamarã">
+  <div class="tour-media" style="background-image:url('../img/barco-cabo-frio.avif');"></div>
+  <div class="tour-body">
+    <div class="tour-title">Barco Catamarã</div>
+    <div class="tour-meta"><span class="badge">⏱ 2h–4h</span><span class="badge">🛥️ Conforto</span><span class="badge">🏖️ Paradas</span></div>
+    <div class="tour-desc">Passeio confortável com visual panorâmico e paradas estratégicas. Ótimo para famílias.</div>
+    
+
+    <form class="tour-form" onsubmit="event.preventDefault(); enviarPasseioWhatsApp(this.querySelector('.btn-cta'));">
+      <input class="full" type="text" name="nome" placeholder="Seu nome" required>
+      <input type="date" name="data" required>
+      <input type="number" name="pessoas" min="1" placeholder="Qtd. de pessoas" required>
+      <input type="number" name="idade" min="0" placeholder="Idade" required>
+      <div class="tour-actions full">
+        <button type="button" class="btn-ghost" onclick="limparFormulario(this)">Limpar</button>
+        <button type="button" class="btn-premium btn-cta" onclick="enviarPasseioWhatsApp(this)">Enviar no WhatsApp</button>
+      </div>
+    </form>
+  </div>
+</article>
+
+<article class="tour-card reveal" data-stagger="4" data-city="Cabo Frio" data-tour="Canoa Havaiana">
+  <div class="tour-media" style="background-image:url('../img/canoa-hawaiana-cf.jpeg');"></div>
+  <div class="tour-body">
+    <div class="tour-title">Canoa Havaiana</div>
+    <div class="tour-meta"><span class="badge">⏱ 60–90min</span><span class="badge">🌅 Pôr do sol</span><span class="badge">👥 Grupo</span></div>
+    <div class="tour-desc">Remada guiada com vibe tranquila e visual único. Excelente para nascer/pôr do sol.</div>
+    <div class="tour-care"><strong>Cuidados:</strong> Levar água e protetor; seguir ritmo do guia; atenção a condições do mar/vento.</div>
+
+    <form class="tour-form" onsubmit="event.preventDefault(); enviarPasseioWhatsApp(this.querySelector('.btn-cta'));">
+      <input class="full" type="text" name="nome" placeholder="Seu nome" required>
+      <input type="date" name="data" required>
+      <input type="number" name="pessoas" min="1" placeholder="Qtd. de pessoas" required>
+      <input type="number" name="idade" min="0" placeholder="Idade" required>
+      <div class="tour-actions full">
+        <button type="button" class="btn-ghost" onclick="limparFormulario(this)">Limpar</button>
+        <button type="button" class="btn-premium btn-cta" onclick="enviarPasseioWhatsApp(this)">Enviar no WhatsApp</button>
+      </div>
+    </form>
+  </div>
+</article>
+
+    </div>
+  </section>
+
+  <section class="builder">
+    <h3 class="reveal" data-stagger="0">MONTE SEU PASSEIO</h3>
+    <p class="reveal" data-stagger="1">Escolha o passeio, preencha seus dados e envie direto no WhatsApp. Eu te respondo com horários, valores e detalhes do seu roteiro.</p>
+  </section>
+  <!-- ===== FOOTER ===== -->
+<footer class="footer">
+
+  <div class="footer-grid">
+
+    <!-- SOBRE / CONTATO -->
+    <div class="footer-col reveal" data-stagger="0">
+      <h3>IGOR GUIA</h3>
+      <p>
+        Experiências personalizadas em Arraial do Cabo, Armação dos Búzios e Cabo Frio,
+        com segurança, organização e atendimento profissional.
+      </p>
+
+      <div class="footer-contato">
+        <p><strong>WhatsApp:</strong> (22) 99968-3645</p>
+        <p><strong>E-mail:</strong> contato@igorguia.com</p>
+        <p><strong>Atendimento:</strong> Região dos Lagos - RJ</p>
+      </div>
+    </div>
+
+    <!-- MAPA DO SITE -->
+    <div class="footer-col reveal" data-stagger="1">
+      <h4>Mapa do Site</h4>
+      <ul class="footer-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#servicos">Nossos Passeios</a></li>
+        <li><a href="cidades.html">Cidades</a></li>
+        <li><a href="excursoes.html">Excursões</a></li>
+        <li><a href="index.html#quem-sou">Quem Sou Eu</a></li>
+        <li><a href="index.html#contato">Fale Conosco</a></li>
+      </ul>
+    </div>
+
+    <!-- REGIÃO DOS LAGOS -->
+    <div class="footer-col reveal" data-stagger="2">
+      <h4>Região dos Lagos</h4>
+      <ul class="footer-links">
+        <li><a href="cidades/buzios.html">Armação dos Búzios</a></li>
+        <li><a href="cidades/cabo-frio.html">Cabo Frio</a></li>
+        <li><a href="cidades/arraial.html">Arraial do Cabo</a></li>
+      </ul>
+    </div>
+
+    <!-- MAPA -->
+    <div class="footer-col footer-mapa reveal" data-stagger="3">
+      <h4>Mapa da Região</h4>
+
+      <div class="mapa-container">
+        <iframe
+          src="https://www.google.com/maps?q=Regi%C3%A3o%20dos%20Lagos%20RJ&z=9&output=embed"
+          width="100%"
+          height="220"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Igor Guia — Região dos Lagos. Todos os direitos reservados.</p>
+  </div>
+
+</footer>
+</main>
+
+<a class="whatsapp-float" href="https://wa.me/5522999683645" target="_blank" aria-label="WhatsApp">💬</a>
+<script src="../script.js"></script>
+</body>
+</html>
